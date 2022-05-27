@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>JPR Blood Bank</title>
+
+    <!-- Favicons -->
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link href="assets/img/faviconpng.png" rel="faviconpng">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body onload="restartSession(); hideFunction();">
+
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+        <h2 class="logo me-auto"><img src="assets/img/testlogo.png" alt="JPR" size="10"> <a href="index.html">JPR Blood Bank</a></h2>
+
+        <!-- ======= Navigation bar Section ======= -->
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="donate.html" title="Requirements, Process and Types of Donation">Donate</a></li>
+                <li><a href="buy.html" title="Purchase Blood Products">Buy</a></li>
+                <li><a href="appointment.html" title="Schedule a Donation appointment">Appointment</a></li>
+                <li><a href="services.html" title="Services offered by the bank">Services</a></li>
+
+                <li class="dropdown"><a href="#"><span>About</span> <i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="aboutus.html">The Company</a></li>
+                        <li><a href="abouttheteam.html">The Team</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="contact.html" title="Contact us">Contact Us</a></li>
+                <li><a href="faq.html" title="Frequently Asked Questions">FAQ</a></li>
+                <span id="foradminonly" class="invisible">
+          <li class="dropdown"><a href="#" ><span>Transactions</span> <i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="transactions.html">Users</a></li>
+                        <li><a href="transactions_products.html">Products</a></li>
+                        <li><a href="transactions_donations.html">Donations</a></li>
+                        <li><a href="transactions_purchases.html">Purchases</a></li>
+                    </ul>
+                </li>
+          </span>
+                <li><a href="signin.html" class="getstarted">Sign In</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+
+        <!-- .navbar -->
+
+    </div>
+</header><!-- End Header -->
+
+<main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+        <div class="container">
+
+            <div class="d-flex justify-content-between align-items-center">
+                <h2>Register</h2>
+                <ol>
+                    <li><a href="index.html">Home</a></li>
+                    <li>Register</li>
+                </ol>
+            </div>
+
+        </div>
+    </section><!-- End Breadcrumbs -->
+
+    <br>
+    <!-- ======= Register Section ======= -->
+    <form method="GET" action="\home">
+        <div class="row d-flex justify-content-center  h-10">
+
+            <div class="col-12 col-md-8 col-lg-6 col-xl-6">
+                <div class="card bg-white text-black" style="border-radius: 1rem;">
+                    <div class="card-body p-3 text-center">
+
+                        <div class="mb-md-5  pb-5">
+
+                            <h3 class="fw-bold mb-2 text-uppercase">Register</h3><br>
+
+                            <!--THIS AREA-->
+
+                            <table align="center" class="registertable">
+                                <tr class="regtabletr">
+                                    <td width=45% class="regtabletd" >
+                                        <div class="floating-label-group">
+                                            <input type="text" id="fname" name="fname" class="form-control form-control-lg" autocomplete="off" autofocus required />
+                                            <label class="floating-label">First Name</label>
+                                        </div>
+
+                                        <div class="floating-label-group">
+                                            <input type="text" id="mname" name="mname" class="form-control form-control-lg" autocomplete="off" autofocus required />
+                                            <label class="floating-label">Middle Name</label>
+                                        </div>
+
+                                        <div class="floating-label-group">
+                                            <input type="text" id="lname" name="lname" class="form-control form-control-lg" autocomplete="off" autofocus required />
+                                            <label class="floating-label">Last Name</label>
+                                        </div>
+                                    </td>
+                                    <td width = 10%>
+
+                                    </td>
+                                    <td width=45%>
+                                        <div class="floating-label-group">
+                                            <input type="text" id="address" name="address" class="form-control form-control-lg" autocomplete="off" autofocus required />
+                                            <label class="floating-label">Address</label>
+                                        </div>
+
+                                        <div class="floating-label-group">
+                                            <input type="text" id="email" class="form-control form-control-lg" autocomplete="off" autofocus required />
+                                            <label class="floating-label">Email</label>
+                                        </div>
+
+                                        <div class="floating-label-group">
+                                            <input type="text" id="phone" name="phone" class="form-control form-control-lg" autocomplete="off" autofocus required />
+                                            <label class="floating-label">Contact Number</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><p></p></td>
+                                </tr>
+                                <tr>
+                                    <td width=45%>
+
+                                        <div class="floating-label-group" align="left">
+                                            <!--<label class="floating-label">Sex</label>   -->
+                                            <select id="sex" style="text-align:left" class="inputregister" name="sex" required >
+                                                <option value="" disabled selected hidden>&nbsp;Sex</option>
+                                                <option value="male">&nbsp;Male</option>
+                                                <option value="female">&nbsp;Female</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="floating-label-group">
+                                            <label class="floating-label">Birth Date</label>
+                                            <input placeholder="" style="text-align:right; padding-right:10px;" format="hello" id="bdate" name="bdate" class="inputregister" type="date" required="required">
+                                        </div>
+
+                                        <div class="floating-label-group">
+                                            <!--<label class="floating-label">Blood Type</label>-->
+
+
+                                            <select id="bloodtype" style="text-align:left" name="bloodtype" class="inputregister" required >
+                                                <option value="" disabled selected hidden>&nbsp;Blood Type</option>
+                                                <option value="-">&nbsp;-</option>
+                                                <option value="A+">&nbsp;A+</option>
+                                                <option value="A-">&nbsp;A-</option>
+                                                <option value="B+">&nbsp;B+</option>
+                                                <option value="B-">&nbsp;B-</option>
+                                                <option value="AB+">&nbsp;AB+</option>
+                                                <option value="AB-">&nbsp;AB-</option>
+                                                <option value="O+">&nbsp;O+</option>
+                                                <option value="O-">&nbsp;O-</option>
+                                            </select>
+
+                                        </div>
+
+                                    </td>
+                                    <td width=10%>
+                                    <td width=45%>
+                                        <div class="floating-label-group">
+                                            <input type="password" id="password" name="password" class="form-control form-control-lg" autocomplete="off" autofocus required />
+                                            <label class="floating-label">Account Password</label>
+                                        </div>
+
+                                        <div class="floating-label-group">
+                                            <input type="password" name="confirmpass" id="confirmpass" class="form-control form-control-lg" autocomplete="off" autofocus required />
+                                            <label class="floating-label">Confirm Password</label>
+                                        </div>
+
+                                        <div class="floating-label-group">
+                                            <p><br></p>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                            </table>
+
+                            <!--THIS END AREA-->
+
+                            <br>
+                            <button class="signinbutton" onclick="customerName(); getEmail(); getPhone(); getPassword(); href='index.html' " name="btnSignUp" type="submit">SIGN UP</button>
+
+
+                        </div>
+
+                        <div>
+                            <p class="mb-0">Already have an account? <a href="signin.html" style="color: blue" style="text-decoration:underline">Sign In</a>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+    <!-- End Register Section -->
+    <br><br>
+</main><!-- End #main -->
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+
+                <div class="container">
+                    <div class="row align-items-start">
+                        <div class="col">
+                            <div class="footer-info">
+                                <h3>JPR Blood Bank</h3>
+                                <p>
+                                    The JPR Blood Bank is a healthcare <br>
+                                    service organization dedicated to <br>
+                                    save lives by providing everyone <br>
+                                    blood products.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col footer-links">
+                            <h4>Site Map</h4>
+                            <ul>
+                                <li><i class="bx bx-chevron-right"></i> <a href="donate.html">Donate</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="buy.html">Buy</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="appointment.html">Appointment</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="services.html">Services</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="aboutus.html">About the Company</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="abouttheteam.html">About the Team</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="contact.html">Contact Us</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="faq.html">FAQ</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col">
+                            <div class="footer-info">
+                                <h3>Contact Us</h3>
+                                <p>
+                                    Sibulan, Negros Oriental <br>
+                                    6201, Philippines<br><br>
+                                    <strong>Phone:</strong> +63 925 602 5018<br>
+                                    <strong>Email:</strong> ryanfjasmin@su.edu.ph<br>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- End Footer -->
+
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+
+</body>
+
+<script>
+    function restartSession(){
+        sessionStorage.clear()
+    }
+
+    function customerName(){
+
+        var fname = document.getElementById('fname').value;
+        sessionStorage.setItem("fname", fname);
+
+        var mname = document.getElementById('mname').value;
+        sessionStorage.setItem("mname", mname);
+
+        var lname = document.getElementById('lname').value;
+        sessionStorage.setItem("lname", lname);
+
+        var custName = fname+' '+mname+' '+lname
+        sessionStorage.setItem("customer", custName);
+    }
+
+
+    function getEmail(){
+        var email = document.getElementById('email').value;
+        sessionStorage.setItem("email", email);
+    }
+
+    function getPhone(){
+        var phone = document.getElementById('phone').value;
+        sessionStorage.setItem("phone", phone);
+    }
+
+    function getPassword(){
+        var custpass = document.getElementById('password').value;
+        sessionStorage.setItem("password", custpass);
+    }
+
+
+</script>
+
+<script>
+
+    function hideFunction(){
+        var theadmin = sessionStorage.getItem("theadminsignin");
+
+        if(theadmin !== null && theadmin !== ''){
+
+        }
+        else{
+            var divsToHide = document.getElementsByClassName("foradminonly");
+            for(var i = 0; i < divsToHide.length; i++){
+                divsToHide[i].style.visibility = "hidden";
+                divsToHide[i].style.display = "none";
+            }
+        }
+    }
+</script>
+
+<style>
+    body {
+        overflow-x: hidden;
+    }
+</style>
+
+</html>
