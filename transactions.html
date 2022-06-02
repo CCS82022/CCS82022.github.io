@@ -349,17 +349,13 @@
 
 </body>
 
-<!-- Jquery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<!-- Datatables -->
-<script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
-<!-- Bootstrap -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script>
-      $(document).ready(function() {
-        $('#myTable').DataTable();
-      });
-    </script>
+    //for table pagination,search and sort
+    $(document).ready(function(){
+        $('#myTable').dataTable();
+    });
+
+</script>
 
 <script>
     function signOut(){
